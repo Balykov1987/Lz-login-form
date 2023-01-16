@@ -6,11 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let loginForm = document.getElementById('login-form');
     let registerForm = document.getElementById('register-form');
 
-
-    let letters = /^[A-Za-zА-Яа-я]+$/;
-    let loginName = document.getElementById('login_name');
-    let loginSubmit = document.getElementById('login_submit');
-
     let LoginEye = document.getElementById('log_eye');
     let LoginPassword = document.getElementById('login_password');
 
@@ -19,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     switchElements();
     changeForm();
-    validationForm();
     visiblePassword();
     registerPassword();
 
@@ -57,16 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-    function validationForm() {
-        loginSubmit.addEventListener("click", function () {
-            if (loginName.value.match(letters)) {
-                return true;
-            } else {
-                $('.error-name').html('The field must be contains only letters');
-            }
-        })
-    }
-    
     function visiblePassword() {
         LoginEye.addEventListener("click", function () {
             if (LoginPassword.type === "password") {
