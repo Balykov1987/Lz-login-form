@@ -14,8 +14,9 @@ $(document).ready(function(){
         //     cache: false,
         //     dataType: "json", // тип передачи данных
         //     data: { // что отправляем
-        //         "login_name": login_name,
-        //         "login_password": login_password,
+        //         "register_email": register_email,
+        //         "register_name": register_name,
+        //         "register_password": register_password,
         //     },
         //
         //     success: function(data){
